@@ -1,0 +1,220 @@
+[21-Mar-2025 09:13:56 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'qfmnqxie_tvet_system.courses' doesn't exist in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php:36
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php(36): mysqli->query('SELECT COUNT(*)...')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php on line 36
+[21-Mar-2025 09:18:40 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'qfmnqxie_tvet_system.courses' doesn't exist in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php:37
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php(37): mysqli->query('SELECT COUNT(*)...')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php on line 37
+[21-Mar-2025 09:19:18 UTC] PHP Warning:  Undefined array key "courses" in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php on line 87
+[21-Mar-2025 09:19:18 UTC] PHP Warning:  Trying to access array offset on null in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php on line 87
+[21-Mar-2025 09:20:33 UTC] PHP Warning:  Undefined array key "courses" in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php on line 88
+[21-Mar-2025 09:20:33 UTC] PHP Warning:  Trying to access array offset on null in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php on line 88
+[21-Mar-2025 09:24:16 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php on line 71
+[21-Mar-2025 09:24:16 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php on line 71
+[21-Mar-2025 09:24:16 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php on line 71
+[21-Mar-2025 09:27:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php on line 72
+[21-Mar-2025 09:27:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php on line 72
+[21-Mar-2025 09:27:42 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php on line 72
+[21-Mar-2025 09:37:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qfmnqxie/paperless.tvetprime.co.ke/index.php:1) in /home/qfmnqxie/paperless.tvetprime.co.ke/pages/sections.php on line 31
+[21-Mar-2025 12:00:26 UTC] PHP Warning:  include(db.php): Failed to open stream: No such file or directory in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php on line 2
+[21-Mar-2025 12:00:26 UTC] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php on line 2
+[21-Mar-2025 12:00:26 UTC] PHP Warning:  Undefined variable $conn in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php on line 15
+[21-Mar-2025 12:00:26 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php:7
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php(7): mysqli_query(NULL, 'SELECT * FROM l...')
+#1 /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php(15): fetchTableData(NULL, 'lab_inventory')
+#2 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php on line 7
+[21-Mar-2025 12:00:26 UTC] PHP Warning:  include(db.php): Failed to open stream: No such file or directory in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php on line 2
+[21-Mar-2025 12:00:26 UTC] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php on line 2
+[21-Mar-2025 12:00:26 UTC] PHP Warning:  Undefined variable $conn in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php on line 15
+[21-Mar-2025 12:00:26 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php:7
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php(7): mysqli_query(NULL, 'SELECT * FROM l...')
+#1 /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php(15): fetchTableData(NULL, 'lab_inventory')
+#2 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/departments.php on line 7
+[21-Mar-2025 12:03:44 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'department_id' in 'WHERE' in /home/qfmnqxie/paperless.tvetprime.co.ke/dp.php:27
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/dp.php(27): mysqli->query('SELECT COUNT(*)...')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/dp.php on line 27
+[21-Mar-2025 12:03:44 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'department_id' in 'WHERE' in /home/qfmnqxie/paperless.tvetprime.co.ke/dp.php:27
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/dp.php(27): mysqli->query('SELECT COUNT(*)...')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/dp.php on line 27
+[21-Mar-2025 12:03:44 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'department_id' in 'WHERE' in /home/qfmnqxie/paperless.tvetprime.co.ke/dp.php:27
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/dp.php(27): mysqli->query('SELECT COUNT(*)...')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/dp.php on line 27
+[21-Mar-2025 12:03:44 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'department_id' in 'WHERE' in /home/qfmnqxie/paperless.tvetprime.co.ke/dp.php:27
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/dp.php(27): mysqli->query('SELECT COUNT(*)...')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/dp.php on line 27
+[21-Mar-2025 12:58:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '123456' for key 'id_number' in /home/qfmnqxie/paperless.tvetprime.co.ke/registry.php:30
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/registry.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/registry.php on line 30
+[21-Mar-2025 13:03:41 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '12345644' for key 'id_number' in /home/qfmnqxie/paperless.tvetprime.co.ke/registry.php:30
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/registry.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/registry.php on line 30
+[21-Mar-2025 14:49:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '5555555' for key 'id_number' in /home/qfmnqxie/paperless.tvetprime.co.ke/registry.php:40
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/registry.php(40): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/registry.php on line 40
+[23-Mar-2025 07:22:18 UTC] PHP Warning:  Undefined variable $sections in /home/qfmnqxie/paperless.tvetprime.co.ke/reports.php on line 191
+[24-Mar-2025 11:01:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '99' for key 'id_number' in /home/qfmnqxie/paperless.tvetprime.co.ke/registry.php:40
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/registry.php(40): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/registry.php on line 40
+[24-Mar-2025 11:01:42 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '99' for key 'id_number' in /home/qfmnqxie/paperless.tvetprime.co.ke/registry.php:40
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/registry.php(40): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/registry.php on line 40
+[25-Mar-2025 08:46:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qfmnqxie/paperless.tvetprime.co.ke/dp.php:1) in /home/qfmnqxie/paperless.tvetprime.co.ke/pages/sections.php on line 31
+[25-Mar-2025 12:13:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qfmnqxie/paperless.tvetprime.co.ke/dp.php:1) in /home/qfmnqxie/paperless.tvetprime.co.ke/pages/sections.php on line 31
+[27-Mar-2025 14:40:39 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qfmnqxie/paperless.tvetprime.co.ke/dp.php:1) in /home/qfmnqxie/paperless.tvetprime.co.ke/pages/sections.php on line 31
+[25-Apr-2025 09:49:35 UTC] PHP Warning:  Undefined variable $sections in /home/qfmnqxie/paperless.tvetprime.co.ke/reports.php on line 191
+[29-Apr-2025 09:37:44 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'demoadmin@gmail.com' for key 'email' in /home/qfmnqxie/paperless.tvetprime.co.ke/seed_admin.php:24
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/seed_admin.php(24): mysqli->query('INSERT INTO use...')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/seed_admin.php on line 24
+[29-Apr-2025 09:40:55 UTC] PHP Warning:  Undefined variable $sections in /home/qfmnqxie/paperless.tvetprime.co.ke/reports.php on line 191
+[29-Apr-2025 09:55:35 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'phone' in 'INSERT INTO' in /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php:12
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php(12): mysqli->prepare('INSERT INTO use...')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php on line 12
+[29-Apr-2025 09:56:26 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'phone' in 'INSERT INTO' in /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php:17
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php(17): mysqli->prepare('INSERT INTO use...')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php on line 17
+[29-Apr-2025 09:57:58 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'phone' in 'INSERT INTO' in /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php:17
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php(17): mysqli->prepare('INSERT INTO use...')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php on line 17
+[29-Apr-2025 09:58:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'phone' in 'INSERT INTO' in /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php:17
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php(17): mysqli->prepare('INSERT INTO use...')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php on line 17
+[29-Apr-2025 09:59:13 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'phone_number' cannot be null in /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php:20
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php(20): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php on line 20
+[29-Apr-2025 10:00:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'phone_number' cannot be null in /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php:20
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php(20): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php on line 20
+[29-Apr-2025 10:14:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '0708579885' for key 'phone_number' in /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php:27
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php(27): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php on line 27
+[29-Apr-2025 10:33:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'username'@'localhost' (using password: YES) in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php:7
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php(7): mysqli->__construct('localhost', 'username', Object(SensitiveParameterValue), 'database')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php on line 7
+[29-Apr-2025 10:34:10 UTC] PHP Warning:  Undefined array key "department" in /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php on line 15
+[29-Apr-2025 10:34:12 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'username'@'localhost' (using password: YES) in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php:7
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php(7): mysqli->__construct('localhost', 'username', Object(SensitiveParameterValue), 'database')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php on line 7
+[29-Apr-2025 10:36:01 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'username'@'localhost' (using password: YES) in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php:7
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php(7): mysqli->__construct('localhost', 'username', Object(SensitiveParameterValue), 'database')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php on line 7
+[29-Apr-2025 10:36:06 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'username'@'localhost' (using password: YES) in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php:7
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php(7): mysqli->__construct('localhost', 'username', Object(SensitiveParameterValue), 'database')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php on line 7
+[29-Apr-2025 10:36:53 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'username'@'localhost' (using password: YES) in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php:7
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php(7): mysqli->__construct('localhost', 'username', Object(SensitiveParameterValue), 'database')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php on line 7
+[29-Apr-2025 10:37:44 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'username'@'localhost' (using password: YES) in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php:7
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php(7): mysqli->__construct('localhost', 'username', Object(SensitiveParameterValue), 'database')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php on line 7
+[29-Apr-2025 10:38:28 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'username'@'localhost' (using password: YES) in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php:7
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php(7): mysqli->__construct('localhost', 'username', Object(SensitiveParameterValue), 'database')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php on line 7
+[29-Apr-2025 10:40:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'username'@'localhost' (using password: YES) in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php:7
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php(7): mysqli->__construct('localhost', 'username', Object(SensitiveParameterValue), 'database')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php on line 7
+[29-Apr-2025 10:40:35 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'username'@'localhost' (using password: YES) in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php:7
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php(7): mysqli->__construct('localhost', 'username', Object(SensitiveParameterValue), 'database')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php on line 7
+[29-Apr-2025 10:40:46 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'username'@'localhost' (using password: YES) in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php:7
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php(7): mysqli->__construct('localhost', 'username', Object(SensitiveParameterValue), 'database')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php on line 7
+[29-Apr-2025 10:40:52 UTC] PHP Warning:  Undefined variable $sections in /home/qfmnqxie/paperless.tvetprime.co.ke/reports.php on line 191
+[29-Apr-2025 10:41:12 UTC] PHP Warning:  Undefined array key "department" in /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php on line 11
+[29-Apr-2025 10:41:12 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'kiketenathan1@gmail.com' for key 'email' in /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php:30
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php(30): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php on line 30
+[29-Apr-2025 10:41:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'username'@'localhost' (using password: YES) in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php:7
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php(7): mysqli->__construct('localhost', 'username', Object(SensitiveParameterValue), 'database')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php on line 7
+[29-Apr-2025 10:41:30 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'username'@'localhost' (using password: YES) in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php:7
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php(7): mysqli->__construct('localhost', 'username', Object(SensitiveParameterValue), 'database')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php on line 7
+[29-Apr-2025 10:41:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'username'@'localhost' (using password: YES) in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php:7
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php(7): mysqli->__construct('localhost', 'username', Object(SensitiveParameterValue), 'database')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php on line 7
+[29-Apr-2025 10:41:40 UTC] PHP Warning:  Undefined variable $sections in /home/qfmnqxie/paperless.tvetprime.co.ke/reports.php on line 191
+[29-Apr-2025 10:42:00 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'username'@'localhost' (using password: YES) in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php:7
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php(7): mysqli->__construct('localhost', 'username', Object(SensitiveParameterValue), 'database')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php on line 7
+[29-Apr-2025 12:23:54 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'username'@'localhost' (using password: YES) in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php:7
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php(7): mysqli->__construct('localhost', 'username', Object(SensitiveParameterValue), 'database')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php on line 7
+[29-Apr-2025 12:24:56 UTC] PHP Warning:  Undefined array key "department" in /home/qfmnqxie/paperless.tvetprime.co.ke/add_deputy.php on line 15
+[29-Apr-2025 12:25:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'username'@'localhost' (using password: YES) in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php:7
+Stack trace:
+#0 /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php(7): mysqli->__construct('localhost', 'username', Object(SensitiveParameterValue), 'database')
+#1 {main}
+  thrown in /home/qfmnqxie/paperless.tvetprime.co.ke/get_user_data.php on line 7
