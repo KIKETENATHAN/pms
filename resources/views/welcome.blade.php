@@ -62,7 +62,7 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#contact" class="text-blue-100 hover:text-white transition-colors font-medium">Contact</a>
+
                     <button onclick="openFeaturesModal()" class="bg-yellow-500 text-white hover:bg-orange-500 hover:text-white transition-colors font-medium px-6 py-2 rounded-lg">
                         Features
                     </button>
@@ -84,7 +84,7 @@
             <!-- Mobile Navigation -->
             <div id="mobileMenu" class="hidden md:hidden border-t border-blue-800 py-4 bg-blue-700/95">
                 <div class="flex flex-col space-y-4">
-                    <a href="#contact" class="text-blue-100 hover:text-white transition-colors">Contact Us</a>
+
                   <button onclick="openFeaturesModal()" class="bg-yellow-500 text-white hover:bg-orange-500 hover:text-white transition-colors font-medium px-6 py-2 rounded-lg">
                         Features
                     </button>
