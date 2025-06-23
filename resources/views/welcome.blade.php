@@ -346,28 +346,11 @@
     </script>
 
    <!--footer-->
-<footer class="bg-blue-800 text-white py-12">
+<footer class="bg-blue-800 text-white py-6">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row justify-between items-center">
-            <div class="text-center md:text-left mb-6 md:mb-0">
-                <div class="flex items-center justify-center md:justify-start space-x-3">
-                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl flex items-center justify-center">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                        </svg>
-                    </div>
-                    <span class="text-xl font-bold">PMS</span>
-                </div>
-                <div class="text-sm text-blue-400">TVET PRIME</div>
-            </div>
-            <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
-                <a href="#features" class="text-gray-300 hover:text-white transition-colors">Features</a>
-                <a href="#benefits" class="text-gray-300 hover:text-white transition-colors">Benefits</a>
-                <a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact Us</a>
-            </div>
-        </div>
-        <div class="mt-8 text-center text-gray-400 text-sm">
-            &copy; 2023 Paperless Management System. | <a href="https://www.tvetkenya.go.ke" class="text-blue-400 hover:text-white transition-colors">TVET PRIME</a> | All rights reserved.
+        <div class="text-center text-white text-sm whitespace-pre-line">
+            &copy; 2023 Paperless Management System. | 
+            <a href="https://www.tvetkenya.go.ke" class="text-blue-300 hover:text-white transition-colors">TVET PRIME</a> | All rights reserved.
         </div>
     </div>
 </footer>
