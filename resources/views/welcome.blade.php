@@ -44,7 +44,7 @@
 </head>
 <body class="bg-white">
     <!-- Navigation -->
-    <nav class="bg-white/95 backdrop-blur-sm border-b border-gray-100 sticky top-0 z-40">
+    <nav class="bg-blue-700/95 backdrop-blur-sm border-b border-blue-800 sticky top-0 z-40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
@@ -55,14 +55,17 @@
                         </svg>
                     </div>
                     <div>
-                        <span class="text-xl font-bold text-gray-900">Paperless</span>
-                        <div class="text-xs text-blue-600 font-medium">TVET PRIME</div>
+                        <span class="text-xl font-bold text-white">Paperless</span>
+                        <div class="text-xs text-blue-200 font-medium">TVET PRIME</div>
                     </div>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Contact</a>
+                    <a href="#contact" class="text-blue-100 hover:text-white transition-colors font-medium">Contact</a>
+                    <button onclick="openFeaturesModal()" class="text-blue-100 hover:text-white transition-colors font-medium">
+                    Features
+                </button>
                     <button onclick="openLoginModal()" class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2 rounded-lg font-medium hover:from-blue-700 hover:to-blue-800 transition-all transform hover:scale-105 shadow-lg">
                         Login
                     </button>
@@ -70,7 +73,7 @@
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
-                    <button onclick="toggleMobileMenu()" class="p-2 rounded-lg text-gray-600 hover:text-blue-600 hover:bg-gray-100 transition-colors">
+                    <button onclick="toggleMobileMenu()" class="p-2 rounded-lg text-blue-100 hover:text-white hover:bg-blue-800 transition-colors">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
@@ -79,9 +82,12 @@
             </div>
 
             <!-- Mobile Navigation -->
-            <div id="mobileMenu" class="hidden md:hidden border-t border-gray-100 py-4">
+            <div id="mobileMenu" class="hidden md:hidden border-t border-blue-800 py-4 bg-blue-700/95">
                 <div class="flex flex-col space-y-4">
-                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Contact Us</a>
+                    <a href="#contact" class="text-blue-100 hover:text-white transition-colors">Contact Us</a>
+                      <button onclick="openFeaturesModal()" class="text-blue-100 hover:text-white transition-colors font-medium">
+                    Features
+                </button>
                     <button onclick="openLoginModal()" class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2 rounded-lg font-medium hover:from-blue-700 hover:to-blue-800 transition-all w-full">
                         Login
                     </button>
@@ -144,48 +150,88 @@
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center space-y-4 mb-16">
-                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900">
-                    Powerful Features for TVET Institutions
-                </h2>
+    <!-- Features Modal Trigger Button in Navbar -->
+    <!-- Place this button in the Navigation Links section of your navbar -->
+    <!-- Example: -->
+   
+    
+   
+
+    <!-- Features Modal -->
+    <div id="featuresModal" class="fixed inset-0 z-50 hidden items-center justify-center">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity" onclick="closeFeaturesModal()"></div>
+        <!-- Modal -->
+        <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-3xl mx-4 transform transition-all">
+            <!-- Header -->
+            <div class="flex items-center justify-between p-6 border-b border-gray-100">
+                <h2 class="text-2xl font-bold text-gray-900">Powerful Features for TVET Institutions</h2>
+                <button onclick="closeFeaturesModal()" class="p-2 hover:bg-gray-100 rounded-full transition-colors">
+                    <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
             </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="group p-8 rounded-2xl border border-gray-100 hover:border-blue-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                    <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
+            <div class="p-8">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="group p-8 rounded-2xl border border-gray-100 hover:border-blue-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Streamlined Processes</h3>
+                        <p class="text-gray-600 leading-relaxed">Digitizes workflows, reduces paperwork, accelerates approvals, and centralizes records for efficient, transparent, and seamless operations in TVET institutions.</p>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Streamlined Processes</h3>
-                    <p class="text-gray-600 leading-relaxed">Digitizes workflows, reduces paperwork, accelerates approvals, and centralizes records for efficient, transparent, and seamless operations in TVET institutions.</p>
-                </div>
-
-                <div class="group p-8 rounded-2xl border border-gray-100 hover:border-blue-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                    <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                        </svg>
+                    <div class="group p-8 rounded-2xl border border-gray-100 hover:border-blue-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Real-time Tracking</h3>
+                        <p class="text-gray-600 leading-relaxed">Instantly monitor document progress, approvals, and submissions for transparency, accountability, and timely actions within the paperless system.</p>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Real-time Tracking</h3>
-                    <p class="text-gray-600 leading-relaxed">Instantly monitor document progress, approvals, and submissions for transparency, accountability, and timely actions within the paperless system.</p>
-                </div>
-
-                <div class="group p-8 rounded-2xl border border-gray-100 hover:border-blue-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                    <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-5 5v-5zM4 19h6v-2H4v2zM16 3H4v2h12V3zM4 7h12v2H4V7zM4 11h12v2H4v-2z"></path>
-                        </svg>
+                    <div class="group p-8 rounded-2xl border border-gray-100 hover:border-blue-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-5 5v-5zM4 19h6v-2H4v2zM16 3H4v2h12V3zM4 7h12v2H4V7zM4 11h12v2H4v-2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Automated Notifications</h3>
+                        <p class="text-gray-600 leading-relaxed">Automated notifications instantly alert users to document status, deadlines, and actions, ensuring timely responses and improved workflow efficiency.</p>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Automated Notifications</h3>
-                    <p class="text-gray-600 leading-relaxed">Automated notifications instantly alert users to document status, deadlines, and actions, ensuring timely responses and improved workflow efficiency.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+
+    <script>
+        // Features modal functions
+        function openFeaturesModal() {
+            const modal = document.getElementById('featuresModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+        function closeFeaturesModal() {
+            const modal = document.getElementById('featuresModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+        // Close modal when clicking outside
+        document.addEventListener('click', function(event) {
+            const modal = document.getElementById('featuresModal');
+            if (event.target === modal) {
+                closeFeaturesModal();
+            }
+        });
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeFeaturesModal();
+            }
+        });
+    </script>
 
     <!-- Benefits Section -->
     <section id="benefits" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
