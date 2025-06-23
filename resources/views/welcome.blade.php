@@ -351,7 +351,7 @@
 <footer class="bg-blue-800 text-white py-6">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center text-white text-sm whitespace-pre-line">
-            &copy; 2023 Paperless Management System. | 
+            &copy; 2025 Paperless Management System. | 
             <a href="https://www.tvetkenya.go.ke" class="text-blue-300 hover:text-white transition-colors">TVET PRIME</a> | All rights reserved.
         </div>
     </div>
