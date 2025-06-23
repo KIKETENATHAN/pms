@@ -150,13 +150,6 @@
         </div>
     </section>
 
-    <!-- Features Modal Trigger Button in Navbar -->
-    <!-- Place this button in the Navigation Links section of your navbar -->
-    <!-- Example: -->
-   
-    
-   
-
     <!-- Features Modal -->
     <div id="featuresModal" class="fixed inset-0 z-50 hidden items-center justify-center">
         <!-- Backdrop -->
@@ -181,7 +174,7 @@
                             </svg>
                         </div>
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">Streamlined Processes</h3>
-                        <p class="text-gray-600 leading-relaxed">Digitizes workflows, reduces paperwork, accelerates approvals, and centralizes records for efficient, transparent, and seamless operations in TVET institutions.</p>
+                        <p class="text-gray-600 leading-relaxed">Digitize, accelerate, centralize, streamline, transparency.</p>
                     </div>
                     <div class="group p-8 rounded-2xl border border-gray-100 hover:border-blue-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                         <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -190,7 +183,7 @@
                             </svg>
                         </div>
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">Real-time Tracking</h3>
-                        <p class="text-gray-600 leading-relaxed">Instantly monitor document progress, approvals, and submissions for transparency, accountability, and timely actions within the paperless system.</p>
+                        <p class="text-gray-600 leading-relaxed">Monitor progress, approvals, submissions instantly.</p>
                     </div>
                     <div class="group p-8 rounded-2xl border border-gray-100 hover:border-blue-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                         <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -199,7 +192,7 @@
                             </svg>
                         </div>
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">Automated Notifications</h3>
-                        <p class="text-gray-600 leading-relaxed">Automated notifications instantly alert users to document status, deadlines, and actions, ensuring timely responses and improved workflow efficiency.</p>
+                        <p class="text-gray-600 leading-relaxed">Instant alerts for workflow efficiency.</p>
                     </div>
                 </div>
             </div>
@@ -233,64 +226,124 @@
         });
     </script>
 
-    <!-- Benefits Section -->
-    <section id="benefits" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center space-y-4 mb-16">
-                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900">
-                    Transform Your Institution
-                </h2>
-                <p class="text-xl text-gray-600">
-                    Experience the benefits of going paperless with measurable results
-                </p>
+    <!-- Benefits Modal Trigger Button in Navbar -->
+    <script>
+        // Add this after DOM is loaded to avoid errors if nav is rendered before this script
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add Benefits button to both desktop and mobile navs
+            const navLinks = document.querySelectorAll('.md\\:flex.items-center.space-x-8, #mobileMenu .flex.flex-col');
+            navLinks.forEach(nav => {
+                // Prevent duplicate button
+                if (!nav.querySelector('.benefits-modal-btn')) {
+                    const btn = document.createElement('button');
+                    btn.textContent = 'Benefits';
+                    btn.className = 'benefits-modal-btn text-blue-100 hover:text-white transition-colors font-medium';
+                    btn.type = 'button';
+                    btn.onclick = openBenefitsModal;
+                    if (nav.classList.contains('md:flex')) {
+                        nav.insertBefore(btn, nav.children[1]);
+                    } else {
+                        btn.className += ' w-full';
+                        nav.insertBefore(btn, nav.children[1]);
+                    }
+                }
+            });
+        });
+    </script>
+
+    <!-- Benefits Modal -->
+    <div id="benefitsModal" class="fixed inset-0 z-50 hidden items-center justify-center">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity" onclick="closeBenefitsModal()"></div>
+        <!-- Modal -->
+        <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-4xl mx-4 transform transition-all max-h-[90vh] overflow-y-auto">
+            <!-- Header -->
+            <div class="flex items-center justify-between p-6 border-b border-gray-100">
+                <h2 class="text-2xl font-bold text-gray-900">Transform Your Institution</h2>
+                <button onclick="closeBenefitsModal()" class="p-2 hover:bg-gray-100 rounded-full transition-colors">
+                    <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
             </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow group">
-                    <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Increased Efficiency</h3>
-                    <p class="text-gray-600 leading-relaxed">Reduce paperwork and processing time by up to 80% with automated workflows and digital approvals.</p>
-                    <div class="mt-4 flex items-center text-green-600 font-medium">
-                        <span class="text-2xl font-bold">80%</span>
-                        <span class="ml-2 text-sm">Time Saved</span>
-                    </div>
+            <div class="p-8">
+                <div class="text-center space-y-4 mb-16">
+                    <p class="text-xl text-gray-600">
+                        Experience the benefits of going paperless with measurable results
+                    </p>
                 </div>
-
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow group">
-                    <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow group">
+                        <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Increased Efficiency</h3>
+                        <p class="text-gray-600 leading-relaxed">Reduce paperwork and processing time by up to 80% with automated workflows and digital approvals.</p>
+                        <div class="mt-4 flex items-center text-green-600 font-medium">
+                            <span class="text-2xl font-bold">80%</span>
+                            <span class="ml-2 text-sm">Time Saved</span>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Improved Accuracy</h3>
-                    <p class="text-gray-600 leading-relaxed">Minimize errors and ensure data integrity with automated validation and digital verification systems.</p>
-                    <div class="mt-4 flex items-center text-blue-600 font-medium">
-                        <span class="text-2xl font-bold">95%</span>
-                        <span class="ml-2 text-sm">Error Reduction</span>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow group">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Improved Accuracy</h3>
+                        <p class="text-gray-600 leading-relaxed">Minimize errors and ensure data integrity with automated validation and digital verification systems.</p>
+                        <div class="mt-4 flex items-center text-blue-600 font-medium">
+                            <span class="text-2xl font-bold">95%</span>
+                            <span class="ml-2 text-sm">Error Reduction</span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow group">
-                    <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Enhanced Transparency</h3>
-                    <p class="text-gray-600 leading-relaxed">Track progress and receive updates in real-time with complete audit trails and accountability measures.</p>
-                    <div class="mt-4 flex items-center text-indigo-600 font-medium">
-                        <span class="text-2xl font-bold">100%</span>
-                        <span class="ml-2 text-sm">Visibility</span>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow group">
+                        <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Enhanced Transparency</h3>
+                        <p class="text-gray-600 leading-relaxed">Track progress and receive updates in real-time with complete audit trails and accountability measures.</p>
+                        <div class="mt-4 flex items-center text-indigo-600 font-medium">
+                            <span class="text-2xl font-bold">100%</span>
+                            <span class="ml-2 text-sm">Visibility</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+
+    <script>
+        // Benefits modal functions
+        function openBenefitsModal() {
+            const modal = document.getElementById('benefitsModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+        function closeBenefitsModal() {
+            const modal = document.getElementById('benefitsModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+        // Close modal when clicking outside
+        document.addEventListener('click', function(event) {
+            const modal = document.getElementById('benefitsModal');
+            if (event.target === modal) {
+                closeBenefitsModal();
+            }
+        });
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeBenefitsModal();
+            }
+        });
+    </script>
 
    <!--footer-->
 <footer class="bg-blue-800 text-white py-12">
