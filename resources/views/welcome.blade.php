@@ -95,10 +95,10 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+    <!-- Hero Section (Auto-fit Height to Content) -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50 py-12">
         <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="space-y-8 animate-slide-up">
                     <div class="space-y-6">
@@ -139,11 +139,12 @@
 
                 <div class="relative animate-float">
                     <!-- Add a photo here -->
-                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="TVET Institution" class="rounded-2xl shadow-2xl w-full h-80 object-cover object-center mb-8 border-4 border-white">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="TVET Institution" class="rounded-2xl shadow-2xl w-full max-w-md h-auto object-cover object-center mb-8 border-4 border-white">
                     <div class="relative z-10 bg-blue-600 rounded-2xl shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                    <h3 class="text-2xl font-semibold text-white mb-4">Lets go Paperless!</h3>
-                    <div class="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full opacity-20 blur-3xl"></div>
-                    <div class="absolute -bottom-8 -left-8 w-64 h-64 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full opacity-20 blur-3xl"></div>
+                        <h3 class="text-2xl font-semibold text-white mb-4">Lets go Paperless!</h3>
+                        <div class="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full opacity-20 blur-3xl"></div>
+                        <div class="absolute -bottom-8 -left-8 w-64 h-64 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full opacity-20 blur-3xl"></div>
+                    </div>
                 </div>
             </div>
         </div>
