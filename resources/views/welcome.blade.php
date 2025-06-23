@@ -66,7 +66,7 @@
                     <button onclick="openFeaturesModal()" class="text-blue-100 hover:text-white transition-colors font-medium">
                     Features
                 </button>
-                    <button onclick="openLoginModal()" class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2 rounded-lg font-medium hover:from-blue-700 hover:to-blue-800 transition-all transform hover:scale-105 shadow-lg">
+                    <button onclick="openLoginModal()" class="bg-yellow-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-orange-500 hover:text-white transition-all transform hover:scale-105 shadow-lg">
                         Login
                     </button>
                 </div>
