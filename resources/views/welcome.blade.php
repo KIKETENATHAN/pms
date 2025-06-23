@@ -63,9 +63,9 @@
                 <!-- Navigation Links -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#contact" class="text-blue-100 hover:text-white transition-colors font-medium">Contact</a>
-                    <button onclick="openFeaturesModal()" class="text-blue-100 hover:text-white transition-colors font-medium">
-                    Features
-                </button>
+                    <button onclick="openFeaturesModal()" class="bg-yellow-500 text-white hover:bg-orange-500 hover:text-white transition-colors font-medium px-6 py-2 rounded-lg">
+                        Features
+                    </button>
                     <button onclick="openLoginModal()" class="bg-yellow-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-orange-500 hover:text-white transition-all transform hover:scale-105 shadow-lg">
                         Login
                     </button>
@@ -85,13 +85,12 @@
             <div id="mobileMenu" class="hidden md:hidden border-t border-blue-800 py-4 bg-blue-700/95">
                 <div class="flex flex-col space-y-4">
                     <a href="#contact" class="text-blue-100 hover:text-white transition-colors">Contact Us</a>
-                      <button onclick="openFeaturesModal()" class="text-blue-100 hover:text-white transition-colors font-medium">
-                    Features
-                </button>
-                    <button onclick="openLoginModal()" class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2 rounded-lg font-medium hover:from-blue-700 hover:to-blue-800 transition-all w-full">
+                  <button onclick="openFeaturesModal()" class="bg-yellow-500 text-white hover:bg-orange-500 hover:text-white transition-colors font-medium px-6 py-2 rounded-lg">
+                        Features
+                    </button>
+                    <button onclick="openLoginModal()" class="bg-yellow-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-orange-500 hover:text-white transition-all transform hover:scale-105 shadow-lg">
                         Login
                     </button>
-                </div>
             </div>
         </div>
     </nav>
